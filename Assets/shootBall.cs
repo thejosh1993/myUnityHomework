@@ -4,7 +4,7 @@ using System.Collections;
 public class shootBall : MonoBehaviour {
 
     public GameObject projectile;
-    public float speed = 5;
+    public float speed = 20;
     private GameObject clone;
 	// Update is called once per frame
 	void Update () {
