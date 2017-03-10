@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class MyHomework7Script : MonoBehaviour
 {
-    MyHomework7Script_2 Object = new MyHomework7Script_2();
     private Renderer rend;
     public float endurance = 100;
     public float damage = 25;
+    private Vector3 position;
+
     //amount of health & damage taken per collision 
 
-   
     void Start()
     {
-
+        GameObject temp = GameObject.Find("bridge");
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -27,10 +27,14 @@ public class MyHomework7Script : MonoBehaviour
             {
                 Destroy(gameObject);
             //upon reaching 0, target is destroyed
-            Object.transform.localPosition += new Vector3(0, 5, 0);
 
-            //Adam, I was trying to get a bridge to raise as the target is destroyed to get the player to the next level.. but i cannot seem to call upon my bridge properly
+      
+            // var MyHomework7Script_2 = transform.position += new Vector3(0, 10, 0);
+
+
+         
+
         }
-        }
+      }
     }
 
