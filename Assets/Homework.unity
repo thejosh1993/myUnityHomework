@@ -1296,6 +1296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endurance: 100
   damage: 25
+  bridge: {fileID: 893041919}
 --- !u!1001 &227583429
 Prefab:
   m_ObjectHideFlags: 0
