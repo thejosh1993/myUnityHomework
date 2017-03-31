@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyHomework7Script : MonoBehaviour
-{
+public class secondtargetscript : MonoBehaviour {
     private Renderer rend;
     public float endurance = 100;
     public float damage = 25;
@@ -14,8 +13,8 @@ public class MyHomework7Script : MonoBehaviour
 
     void Start()
     {
-        audio = GetComponent<AudioSource>();
-    
+       audio = GetComponent<AudioSource>();
+
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -29,7 +28,7 @@ public class MyHomework7Script : MonoBehaviour
         if (endurance < 0)
         {
             Destroy(gameObject);
-            bridge.transform.position += new Vector3(0, 14, 0);
+            //bridge.transform.position += new Vector3(0, 14, 0);
             //upon reaching 0, target is destroyed, and bridge is raised.
 
 
@@ -38,5 +37,4 @@ public class MyHomework7Script : MonoBehaviour
 
         }
     }
-    }
-
+}

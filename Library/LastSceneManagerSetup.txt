@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/backupfile2.unity
+- path: Assets/Homework.unity
   isLoaded: 1
   isActive: 1
